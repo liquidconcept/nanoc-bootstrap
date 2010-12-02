@@ -9,6 +9,9 @@ compile '/stylesheet/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
+compile '/images/*/' do
+end
+
 compile '*' do
   filter :erb
   layout 'default'
@@ -16,11 +19,14 @@ end
 
 # Route
 route '/stylesheet/_*/' do
-  nil
 end
 
 route '/stylesheet/*/' do
   item.identifier.chop + '.css'
+end
+
+route '/images/*/' do
+  item.identifier.chop + '.' + item[:extension]
 end
 
 route '*' do
