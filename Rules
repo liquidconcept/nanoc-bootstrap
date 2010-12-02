@@ -5,7 +5,7 @@ require 'compass'
 Compass.add_project_configuration 'config/compass.rb'
 
 # Compile
-compile '/stylesheet/*/' do
+compile '/stylesheets/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
@@ -18,10 +18,10 @@ compile '*' do
 end
 
 # Route
-route '/stylesheet/_*/' do
+route '/stylesheets/_*/' do
 end
 
-route '/stylesheet/*/' do
+route '/stylesheets/*/' do
   item.identifier.chop + '.css'
 end
 
