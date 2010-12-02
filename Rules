@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+# Compass
+require 'compass'
+Compass.add_project_configuration 'config/compass.rb'
+
+# Compile
+compile '/stylesheet/*/' do
+  filter :sass, Compass.sass_engine_options
+end
+
+compile '*' do
+  filter :erb
+  layout 'default'
+end
+
+# Route
+route '/stylesheet/_*/' do
+  nil
+end
+
+route '/stylesheet/*/' do
+  item.identifier.chop + '.css'
+end
+
+route '*' do
+  if item.children.size > 0 || item.identifier == '/'
+    item.identifier + 'index.html'
+  else
+    item.identifier.gsub(/\/$/, '') + '.html'
+  end
+end
+
+# Layout
+layout '*', :erb
