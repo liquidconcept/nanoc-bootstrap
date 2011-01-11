@@ -1,15 +1,19 @@
 #!/usr/bin/env ruby
+# encoding: utf-8
 
 # Compass
 require 'compass'
 Compass.add_project_configuration 'config/compass.rb'
 
 # Compile
+compile '/images/*/' do
+end
+
 compile '/stylesheets/*/' do
   filter :sass, Compass.sass_engine_options
 end
 
-compile '/images/*/' do
+compile '/javascript/*/' do
 end
 
 compile '*' do
@@ -18,6 +22,10 @@ compile '*' do
 end
 
 # Route
+route '/images/*/' do
+  item.identifier.chop + '.' + item[:extension]
+end
+
 route '/stylesheets/_*/' do
 end
 
@@ -25,15 +33,15 @@ route '/stylesheets/*/' do
   item.identifier.chop + '.css'
 end
 
-route '/images/*/' do
-  item.identifier.chop + '.' + item[:extension]
+route '/javascript/*/' do
+  item.identifier.chop + '.js'
 end
 
 route '*' do
   if item.children.size > 0 || item.identifier == '/'
     item.identifier + 'index.html'
   else
-    item.identifier.gsub(/\/$/, '') + '.html'
+    item.identifier.gsub(/\/$/, '') + '.' + item[:extension]
   end
 end
 
