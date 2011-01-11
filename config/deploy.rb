@@ -7,6 +7,8 @@ set :scm,         :git
 set :repository,  '<website git repository>'
 set :branch,      'master'
 
+ssh_options[:forward_agent] = true
+
 default_run_options[:pty] = true
 default_environment['LC_CTYPE'] = 'en_US.UTF-8'
 
