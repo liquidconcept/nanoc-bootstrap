@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 
 gem 'rack', '~> 1.2'
 gem 'nanoc'
-gem 'sinatra', :group => :development
+gem 'sinatra', :group => [:development, :test] # remove group list to turn this website site in app (contact form, ...)
 
 # gem 'pony'
 # gem 'sqlite3-ruby'
