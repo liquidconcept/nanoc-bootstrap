@@ -1,25 +1,39 @@
 # A sample Gemfile
-source "http://rubygems.org"
+source 'http://rubygems.org'
 
-gem 'rack', '~> 1.2.1'
+gem 'rack', '~> 1.2'
 gem 'nanoc'
-# gem 'sinatra'
+gem 'sinatra', :group => :development
 
 # gem 'pony'
 # gem 'sqlite3-ruby'
 
 gem 'compass'
 
-gem 'capistrano',       :group => [:development]
-gem 'railsless-deploy', :group => [:development]
+group :development do
+  gem 'capistrano'
+  gem 'railsless-deploy'
+end
 
-gem 'guard'
-gem 'guard-nanoc'
+group :development, :test do
+  gem 'guard'
+  gem 'guard-nanoc'
+  gem 'guard-bundler'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'guard-passenger'
 
-gem 'guard-bundler',    :group => [:development, :test]
-gem 'guard-rspec',      :group => [:development, :test]
-gem 'livereload',       :group => [:development, :test]
-gem 'guard-livereload', :group => [:development, :test]
+  gem 'rspec'
+  gem 'rack-test'
+end
 
-gem 'rspec',            :group => [:development, :test]
-gem 'rack-test',        :group => [:test]
+group :linux do
+  gem 'rb-inotify', ['~> 0.8', '>= 0.8.5']
+  gem 'libnotify'
+end
+
+group :osx do
+  gem 'rb-fsevent'
+  gem 'growl'
+end
+

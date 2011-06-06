@@ -17,6 +17,8 @@ set :deploy_via,  :remote_cache
 set :deploy_to,   "/var/www/#{domain}/#{application}"
 set :use_sudo,    false
 
+set :bundle_without,  [:development, :test, :linux, :osx]
+
 role :web, server_name                          # Your HTTP server, Apache/etc
 role :app, server_name                          # This may be the same as your `Web` server
 role :db,  server_name, :primary => true        # This is where Rails migrations will run
