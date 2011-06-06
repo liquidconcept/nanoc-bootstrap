@@ -8,8 +8,8 @@ guard 'nanoc' do
   watch('config.yaml')
   watch('config/compass.rb')
   watch('Rules')
-  watch('layouts/')
-  watch('content/')
+  watch(%r{layouts/.*})
+  watch(%r{content/.*})
   watch('lib/helpers.rb')
 end
 
