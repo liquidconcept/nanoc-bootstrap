@@ -6,3 +6,5 @@ tmp/*
 db/*
 /start.bat
 *~
+Gemfile.lock
+log/*.log
