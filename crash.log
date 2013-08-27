@@ -1,0 +1,277 @@
+Crashlog created at 2013-08-27 10:34:20 +0200
+
+===== MESSAGE:
+
+NoMethodError: undefined method `asset_path' for Nanoc::Helpers::Sprockets:Module
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. ./Rules:37:in `block in load'
+  1. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  2. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  3. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:239:in `block (2 levels) in route_reps'
+  4. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:237:in `each_pair'
+  5. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:237:in `block in route_reps'
+  6. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:232:in `each'
+  7. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:232:in `route_reps'
+  8. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/compilation/compiler.rb:124:in `load'
+  9. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/base/source_data/site.rb:250:in `load'
+  10. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli/command_runner.rb:63:in `load_site'
+  11. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli/commands/compile.rb:358:in `run'
+  12. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  13. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  14. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  15. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli/command_runner.rb:13:in `call'
+  16. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  17. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  18. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  19. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  20. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  21. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli.rb:52:in `block in run'
+  22. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  23. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  24. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib/nanoc/cli.rb:50:in `run'
+  25. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/bin/nanoc:19:in `<top (required)>'
+  26. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/bin/nanoc:19:in `load'
+  ... 29 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.4 © 2007-2013 Denis Defreyne.
+Running ruby 1.9.2 (2011-07-09) on x86_64-darwin11.2.0 with RubyGems 1.8.10.
+
+===== SYSTEM INFORMATION:
+
+Darwin CentroBusiness 11.4.2 Darwin Kernel Version 11.4.2: Thu Aug 23 16:25:48 PDT 2012; root:xnu-1699.32.7~1/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  bundler 1.2.1
+  capistrano 2.15.4
+  chunky_png 1.2.8
+  colored 1.2
+  compass 0.12.2
+  cri 2.3.0
+  execjs 1.4.0
+  fssm 0.2.10
+  highline 1.6.19
+  hike 1.2.3
+  i18n 0.6.4
+  libv8 3.11.8.17
+  multi_json 1.7.7
+  nanoc 3.6.4
+  nanoc-filesystem-i18n 0.2.0
+  nanoc-gzip-filter 0.0.1
+  nanoc-sprockets-filter 0.1.1
+  net-scp 1.1.1
+  net-sftp 2.1.2
+  net-ssh 2.6.7
+  net-ssh-gateway 1.2.0
+  rack 1.5.2
+  rack-protection 1.5.0
+  railsless-deploy 1.1.2
+  ref 1.0.5
+  sass 3.2.9
+  sinatra 1.4.3
+  sprockets 2.10.0
+  sprockets-helpers 1.0.1
+  sprockets-sass 1.0.1
+  therubyracer 0.11.4
+  tilt 1.4.1
+  uglifier 2.1.1
+
+===== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-vfILEm/Render"
+Apple_Ubiquity_Message => "/tmp/launch-fRSXn5/Apple_Ubiquity_Message"
+BUNDLE_BIN_PATH => "/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.2.1/bin/bundle"
+BUNDLE_GEMFILE => "/Users/ludovicturmel/Dev/clients/liquid-concept/website/Gemfile"
+COLORFGBG => "7;0"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-eFP9Lp/org.x:0"
+EDITOR => "mvim"
+GEM_HOME => "/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290"
+GEM_PATH => "/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290:/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290@global"
+GIT_EDITOR => "mvim -f"
+HOME => "/Users/ludovicturmel"
+IRBRC => "/Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/.irbrc"
+ITERM_PROFILE => "Default"
+ITERM_SESSION_ID => "w0t2p1"
+LC_ALL => "en_US.UTF-8"
+LC_CTYPE => "en_US.UTF-8"
+LOGNAME => "ludovicturmel"
+MY_RUBY_HOME => "/Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290"
+OLDPWD => "/Users/ludovicturmel/dev/clients/liquid-concept"
+PATH => "/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/bin:/opt/local/bin:/opt/local/sbin:/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/ludovicturmel/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin"
+PWD => "/Users/ludovicturmel/dev/clients/liquid-concept/website"
+RUBYOPT => "-I/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.2.1/lib -rbundler/setup"
+RUBY_VERSION => "ruby-1.9.2-p290"
+SECURITYSESSIONID => "186a4"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-N9tkPq/Listeners"
+TERM => "xterm"
+TERM_PROGRAM => "iTerm.app"
+TMPDIR => "/var/folders/yl/4rp4fb697t7d_zlmqdbl826c0000gp/T/"
+USER => "ludovicturmel"
+_ => "/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/bin/nanoc"
+_ORIGINAL_GEM_PATH => "/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290:/Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290@global"
+__CF_USER_TEXT_ENCODING => "0x1F6:0:0"
+__array_start => "0"
+_first => "0"
+_second => "1"
+escape_flag => "1"
+rvm_bin_path => "/Users/ludovicturmel/.rvm/bin"
+rvm_clang_flag => "0"
+rvm_debug_flag => "0"
+rvm_dump_environment_flag => "0"
+rvm_path => "/Users/ludovicturmel/.rvm"
+rvm_prefix => "/Users/ludovicturmel"
+rvm_reload_flag => "0"
+rvm_verbose_flag => "0"
+rvm_version => "1.10.0-pre"
+
+===== GEMFILE.LOCK:
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    capistrano (2.15.4)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    chunky_png (1.2.8)
+    colored (1.2)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    cri (2.3.0)
+      colored (>= 1.2)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    fssm (0.2.10)
+    highline (1.6.19)
+    hike (1.2.3)
+    i18n (0.6.4)
+    libv8 (3.11.8.17)
+    multi_json (1.7.7)
+    nanoc (3.6.4)
+      cri (~> 2.3)
+    nanoc-filesystem-i18n (0.2.0)
+      i18n (>= 0.4.1)
+      nanoc (>= 3.1.2)
+    nanoc-gzip-filter (0.0.1)
+      nanoc (>= 3.4.0)
+    nanoc-sprockets-filter (0.1.1)
+      nanoc (>= 3.4.0)
+      sprockets (>= 2.8.0)
+    net-scp (1.1.1)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.7)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
+    rack (1.5.2)
+    rack-protection (1.5.0)
+      rack
+    railsless-deploy (1.1.2)
+    ref (1.0.5)
+    sass (3.2.9)
+    sinatra (1.4.3)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sprockets (2.10.0)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sprockets-helpers (1.0.1)
+      sprockets (~> 2.0)
+    sprockets-sass (1.0.1)
+      sprockets (~> 2.0)
+      tilt (~> 1.1)
+    therubyracer (0.11.4)
+      libv8 (~> 3.11.8.12)
+      ref
+    tilt (1.4.1)
+    uglifier (2.1.1)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  capistrano
+  compass
+  libv8 (~> 3.11.8)
+  nanoc
+  nanoc-filesystem-i18n
+  nanoc-gzip-filter
+  nanoc-sprockets-filter
+  rack
+  railsless-deploy
+  sass
+  sinatra
+  sprockets
+  sprockets-helpers
+  sprockets-sass
+  therubyracer
+  uglifier
+
+===== LOAD PATHS:
+
+  0. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib
+  1. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/uglifier-2.1.1/lib
+  2. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/therubyracer-0.11.4/lib
+  3. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/therubyracer-0.11.4/ext
+  4. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/sprockets-sass-1.0.1/lib
+  5. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/sprockets-helpers-1.0.1/lib
+  6. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/sinatra-1.4.3/lib
+  7. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/ref-1.0.5/lib
+  8. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/railsless-deploy-1.1.2/lib
+  9. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/rack-protection-1.5.0/lib
+  10. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-sprockets-filter-0.1.1/lib
+  11. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/sprockets-2.10.0/lib
+  12. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/tilt-1.4.1/lib
+  13. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.5.2/lib
+  14. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-gzip-filter-0.0.1/lib
+  15. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-filesystem-i18n-0.2.0/lib
+  16. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/nanoc-3.6.4/lib
+  17. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/libv8-3.11.8.17/lib
+  18. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/libv8-3.11.8.17/ext
+  19. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/i18n-0.6.4/lib
+  20. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/hike-1.2.3/lib
+  21. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/execjs-1.4.0/lib
+  22. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/multi_json-1.7.7/lib
+  23. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/cri-2.3.0/lib
+  24. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.2/lib
+  25. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/sass-3.2.9/lib
+  26. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/fssm-0.2.10/lib
+  27. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/colored-1.2/lib
+  28. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/chunky_png-1.2.8/lib
+  29. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/capistrano-2.15.4/lib
+  30. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/net-ssh-gateway-1.2.0/lib
+  31. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/net-sftp-2.1.2/lib
+  32. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/net-scp-1.1.1/lib
+  33. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/net-ssh-2.6.7/lib
+  34. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/highline-1.6.19/lib
+  35. /Users/ludovicturmel/.rvm/gems/ruby-1.9.2-p290/gems/bundler-1.2.1/lib
+  36. /Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/site_ruby/1.9.1
+  37. /Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/site_ruby/1.9.1/x86_64-darwin11.2.0
+  38. /Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/site_ruby
+  39. /Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/vendor_ruby/1.9.1
+  40. /Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/vendor_ruby/1.9.1/x86_64-darwin11.2.0
+  41. /Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/vendor_ruby
+  42. /Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1
+  43. /Users/ludovicturmel/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/x86_64-darwin11.2.0
+  44. /Users/ludovicturmel/Dev/clients/liquid-concept/website
